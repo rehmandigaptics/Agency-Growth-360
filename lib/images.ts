@@ -1,0 +1,20 @@
+/** Local marketing photos in /public/images */
+export const siteImages = {
+  teamCollab: "/images/team-collab.jpg",
+  wireframeReview: "/images/wireframe-review.jpg",
+  crmDashboard: "/images/crm-dashboard.jpg",
+  consultation: "/images/consultation.jpg",
+  freelancerDesk: "/images/freelancer-desk.jpg",
+  strategyMeeting: "/images/strategy-meeting.jpg",
+  opsMonitors: "/images/ops-monitors.jpg",
+  growthChart: "/images/growth-chart.jpg",
+  focusedFreelancer: "/images/focused-freelancer.jpg",
+  studioTeam: "/images/studio-team.jpg",
+  partnershipHandshake: "/images/partnership-handshake.jpg",
+  digitalConnect: "/images/digital-connect.jpg",
+  integrationsHub: "/images/integrations-hub.jpg",
+  ideaLightbulb: "/images/idea-lightbulb.jpg",
+  growthPath: "/images/growth-path.jpg",
+  workflowChecklist: "/images/workflow-checklist.jpg",
+  analyticsDashboard: "/images/analytics-dashboard.jpg",
+} as const;
