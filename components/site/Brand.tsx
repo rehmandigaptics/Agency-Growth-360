@@ -1,3 +1,5 @@
+import { sitePath } from "@/lib/site-path";
+
 export function Brand({
   className = "",
   onClick,
@@ -6,7 +8,11 @@ export function Brand({
   onClick?: () => void;
 }) {
   return (
-    <a className={`navbar-brand ${className}`.trim()} href="/" onClick={onClick}>
+    <a
+      className={`navbar-brand ${className}`.trim()}
+      href={sitePath("/")}
+      onClick={onClick}
+    >
       <span className="brand-icon">
         <i className="bi bi-graph-up-arrow" />
       </span>

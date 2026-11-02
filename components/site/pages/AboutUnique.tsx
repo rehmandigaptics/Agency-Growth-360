@@ -16,6 +16,8 @@ const beliefs = [
   },
 ];
 
+import { sitePath } from "@/lib/site-path";
+
 export function AboutUnique() {
   return (
     <div className="page-about-unique">
@@ -47,7 +49,7 @@ export function AboutUnique() {
                   We do not sell one-off tactics. We help you build a practical operating
                   rhythm for acquisition, delivery, and follow-through.
                 </p>
-                <a className="btn-lime" href="/contact">
+                <a className="btn-lime" href={sitePath("/contact")}>
                   Start a conversation <i className="bi bi-arrow-up-right" />
                 </a>
               </div>

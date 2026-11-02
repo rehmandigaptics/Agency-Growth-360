@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { sitePath } from "@/lib/site-path";
 
 const faqs = [
   {
@@ -59,7 +60,7 @@ export function Faq() {
               </span>
               <a
                 aria-label="Email Agency Growth 360"
-                href="/contact"
+                href={sitePath("/contact")}
               >
                 <i aria-hidden="true" className="bi bi-arrow-up-right" />
               </a>

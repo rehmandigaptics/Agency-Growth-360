@@ -1,5 +1,6 @@
 import { FrameImage } from "@/components/site/FrameImage";
 import { siteImages } from "@/lib/images";
+import { sitePath } from "@/lib/site-path";
 
 const points = [
   {
@@ -61,7 +62,7 @@ export function About() {
                 </div>
               ))}
             </div>
-            <a className="btn-lime ag-about-button" href="/services">
+            <a className="btn-lime ag-about-button" href={sitePath("/services/")}>
               Explore services <i className="bi bi-arrow-down-right" />
             </a>
           </div>

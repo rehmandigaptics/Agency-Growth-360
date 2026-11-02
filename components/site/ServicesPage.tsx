@@ -1,4 +1,6 @@
 
+import { sitePath } from "@/lib/site-path";
+
 const pageServices = [
   {
     number: "/01",
@@ -107,7 +109,7 @@ export function ServicesPageSection() {
                 <a
                   aria-label={`Discuss ${service.title}`}
                   className="ag-svc-tile-link"
-                  href="/contact"
+                  href={sitePath("/contact")}
                 >
                   <span>Explore solution</span>
                   <span className="ag-svc-tile-arrow">
@@ -128,7 +130,7 @@ export function ServicesPageSection() {
               Not sure where to begin? <strong>Let&apos;s map your next move.</strong>
             </span>
           </div>
-          <a href="/contact">
+          <a href={sitePath("/contact")}>
             Let&apos;s talk about your goals{" "}
             <i aria-hidden="true" className="bi bi-arrow-up-right" />
           </a>

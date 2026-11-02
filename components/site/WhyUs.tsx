@@ -8,6 +8,8 @@ const benefits = [
   "Designed to support sustainable, long-term growth",
 ];
 
+import { sitePath } from "@/lib/site-path";
+
 export function WhyUs() {
   return (
     <section className="section-pad why-premium" id="why-us">
@@ -52,7 +54,7 @@ export function WhyUs() {
                 </div>
               ))}
             </div>
-            <a className="btn-lime why-button" href="/contact">
+            <a className="btn-lime why-button" href={sitePath("/contact")}>
               Discuss Your Goals <i className="bi bi-arrow-up-right" />
             </a>
             <span className="why-cta-note">Strategy · Systems · Scalable growth</span>

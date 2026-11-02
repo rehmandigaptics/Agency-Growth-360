@@ -38,6 +38,8 @@ const promises = [
   },
 ];
 
+import { sitePath } from "@/lib/site-path";
+
 export function WhyUsUnique() {
   return (
     <div className="page-why-unique">
@@ -115,7 +117,7 @@ export function WhyUsUnique() {
             ))}
           </div>
           <div className="pwu-cta reveal">
-            <a className="btn-lime" href="/contact">
+            <a className="btn-lime" href={sitePath("/contact")}>
               Talk through your goals <i className="bi bi-arrow-up-right" />
             </a>
           </div>

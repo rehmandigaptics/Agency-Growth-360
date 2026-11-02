@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { siteImages } from "@/lib/images";
+import { sitePath } from "@/lib/site-path";
 
 const portraits = [
   { src: siteImages.consultation, position: "42% 18%" },
@@ -25,10 +26,10 @@ export function Hero() {
               practical plan.
             </p>
             <div className="d-flex gap-3 flex-wrap mt-4 hero-in">
-              <a className="btn-lime" href="/contact">
+              <a className="btn-lime" href={sitePath("/contact/")}>
                 Book a Free Consultation <i className="bi bi-arrow-up-right" />
               </a>
-              <a className="btn-outline-lightish" href="/services">
+              <a className="btn-outline-lightish" href={sitePath("/services/")}>
                 Explore Services <i className="bi bi-arrow-down-right" />
               </a>
             </div>

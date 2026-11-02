@@ -7,6 +7,8 @@ const steps = [
   ["See what needs attention", "Track progress and keep your team aligned."],
 ];
 
+import { sitePath } from "@/lib/site-path";
+
 export function Workflows() {
   return (
     <section className="section-pad workflow-premium" id="workflows">
@@ -33,7 +35,7 @@ export function Workflows() {
                 </div>
               ))}
             </div>
-            <a className="btn-lime workflow-button" href="/contact">
+            <a className="btn-lime workflow-button" href={sitePath("/contact")}>
               Discuss your workflow <i className="bi bi-arrow-up-right" />
             </a>
             <div className="workflow-footnote">Connected systems • Clear next steps</div>

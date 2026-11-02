@@ -8,6 +8,8 @@ const flow = [
   { icon: "bi-graph-up", title: "See", body: "Visibility into what needs attention." },
 ];
 
+import { sitePath } from "@/lib/site-path";
+
 export function WorkflowsUnique() {
   return (
     <div className="page-workflows-unique">
@@ -39,7 +41,7 @@ export function WorkflowsUnique() {
                   We help you connect capture, nurture, pipeline, and visibility so growth
                   work keeps moving even when the calendar is full.
                 </p>
-                <a className="btn-lime" href="/contact">
+                <a className="btn-lime" href={sitePath("/contact")}>
                   Discuss your workflow <i className="bi bi-arrow-up-right" />
                 </a>
                 <ul className="pwf-rail" aria-label="Workflow steps">

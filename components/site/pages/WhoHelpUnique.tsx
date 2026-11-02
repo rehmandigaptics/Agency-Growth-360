@@ -33,6 +33,8 @@ const personas = [
   },
 ];
 
+import { sitePath } from "@/lib/site-path";
+
 export function WhoHelpUnique() {
   return (
     <div className="page-who-unique">
@@ -56,7 +58,7 @@ export function WhoHelpUnique() {
                       </li>
                     ))}
                   </ul>
-                  <a className="btn-lime" href="/contact">
+                  <a className="btn-lime" href={sitePath("/contact")}>
                     {persona.cta} <i className="bi bi-arrow-up-right" />
                   </a>
                 </div>

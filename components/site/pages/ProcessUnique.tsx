@@ -25,6 +25,8 @@ const stages = [
   },
 ];
 
+import { sitePath } from "@/lib/site-path";
+
 export function ProcessUnique() {
   return (
     <div className="page-process-unique">
@@ -92,7 +94,7 @@ export function ProcessUnique() {
           </div>
 
           <div className="ppu-foot reveal">
-            <a className="btn-lime" href="/contact">
+            <a className="btn-lime" href={sitePath("/contact")}>
               Walk through the process <i className="bi bi-arrow-up-right" />
             </a>
           </div>

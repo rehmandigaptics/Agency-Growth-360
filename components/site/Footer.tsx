@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Brand } from "@/components/site/Brand";
 import { CONTACT_EMAIL } from "@/lib/site";
+import { sitePath } from "@/lib/site-path";
 
 export function Footer() {
   const [year, setYear] = useState<number | null>(null);
@@ -63,7 +64,7 @@ export function Footer() {
           >
             <span className="footer-powered-label">Powered by</span>
             <Image
-              src="/images/partners/360growthlab.png"
+              src={sitePath("/images/partners/360growthlab.png")}
               alt="360 Growth Lab"
               width={140}
               height={37}

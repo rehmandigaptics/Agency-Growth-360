@@ -1,4 +1,5 @@
 import { FrameImage } from "@/components/site/FrameImage";
+import { sitePath } from "@/lib/site-path";
 import type { PageContent } from "@/lib/pages";
 
 type PageHeroProps = {
@@ -21,7 +22,7 @@ export function PageHero({ page, variant = "split" }: PageHeroProps) {
             </h1>
             <p className="ag-page-hero-lead hero-in">{page.lead}</p>
             <div className="ag-page-hero-actions hero-in">
-              <a className="btn-lime" href={page.ctaHref}>
+              <a className="btn-lime" href={sitePath(page.ctaHref)}>
                 {page.ctaLabel} <i className="bi bi-arrow-up-right" />
               </a>
             </div>
@@ -42,11 +43,11 @@ export function PageHero({ page, variant = "split" }: PageHeroProps) {
             </h1>
             <p className="ag-page-hero-lead">{page.lead}</p>
             <div className="ag-page-hero-actions">
-              <a className="btn-lime" href={page.ctaHref}>
+              <a className="btn-lime" href={sitePath(page.ctaHref)}>
                 {page.ctaLabel} <i className="bi bi-arrow-up-right" />
               </a>
               {page.slug !== "contact" ? (
-                <a className="btn-outline-lightish" href="/contact">
+                <a className="btn-outline-lightish" href={sitePath("/contact")}>
                   Contact <i className="bi bi-arrow-up-right" />
                 </a>
               ) : null}
@@ -79,11 +80,11 @@ export function PageHero({ page, variant = "split" }: PageHeroProps) {
               </h1>
               <p className="ag-page-hero-lead hero-in">{page.lead}</p>
               <div className="ag-page-hero-actions hero-in">
-                <a className="btn-lime" href={page.ctaHref}>
+                <a className="btn-lime" href={sitePath(page.ctaHref)}>
                   {page.ctaLabel} <i className="bi bi-arrow-up-right" />
                 </a>
                 {page.slug !== "contact" ? (
-                  <a className="btn-outline-lightish" href="/contact">
+                  <a className="btn-outline-lightish" href={sitePath("/contact")}>
                     Contact <i className="bi bi-arrow-up-right" />
                   </a>
                 ) : null}

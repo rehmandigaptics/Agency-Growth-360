@@ -1,4 +1,6 @@
 
+import { sitePath } from "@/lib/site-path";
+
 export function PageCta() {
   return (
     <section className="new-section ag-page-cta">
@@ -17,7 +19,7 @@ export function PageCta() {
               </p>
             </div>
             <div className="col-lg-4 text-lg-end">
-              <a className="btn-lime" href="/contact">
+              <a className="btn-lime" href={sitePath("/contact/")}>
                 Start a conversation <i className="bi bi-arrow-up-right" />
               </a>
               <div className="mt-3 small" style={{ color: "#b5c5ae" }}>

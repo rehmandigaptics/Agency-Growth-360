@@ -1,5 +1,6 @@
 import { FrameImage } from "@/components/site/FrameImage";
 import { siteImages } from "@/lib/images";
+import { sitePath } from "@/lib/site-path";
 
 const services = [
   {
@@ -108,7 +109,7 @@ function ServiceCard({
       <a
         aria-label={hidden ? undefined : `Discuss ${service.title}`}
         className="ag-service-link"
-        href="/contact"
+        href={sitePath("/contact")}
         tabIndex={hidden ? -1 : undefined}
       >
         <span>Explore solution</span>
@@ -168,7 +169,7 @@ export function Services() {
               Not sure where to begin? <strong>Let&apos;s map your next move.</strong>
             </span>
           </div>
-          <a href="/contact">
+          <a href={sitePath("/contact")}>
             Let&apos;s talk about your goals{" "}
             <i aria-hidden="true" className="bi bi-arrow-up-right" />
           </a>
@@ -239,7 +240,7 @@ function ToolkitPanel({
             </li>
           ))}
         </ul>
-        <a className="mini-link toolkit-cta" href={href}>
+        <a className="mini-link toolkit-cta" href={sitePath(href)}>
           {cta} <i className="bi bi-arrow-up-right ms-2" />
         </a>
       </div>
